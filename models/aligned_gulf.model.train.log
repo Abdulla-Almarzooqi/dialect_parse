@@ -1,0 +1,534 @@
+[2023-11-25 13:22:40 INFO] 
+amp: false
+bert: ashabrawy/gumar_aligned_msa
+bert_pooling: mean
+binarize: false
+buckets: 32
+build: false
+cache: false
+checkpoint: false
+clip: 5.0
+dev: ./data/Gulf/gumar_dev.conllu
+device: '0'
+dist: ddp
+embed: glove-6b-100
+encoder: bert
+encoder_dropout: 0.1
+epochs: 10
+eps: 1.0e-08
+feat: null
+fix_len: 20
+lr: 5.0e-05
+lr_rate: 10
+max_len: null
+min_freq: 2
+mix_dropout: 0.0
+mlp_dropout: 0.33
+mode: train
+mu: 0.9
+n_arc_mlp: 500
+n_bert_layers: 4
+n_rel_mlp: 100
+nu: 0.999
+partial: false
+path: models/aligned_gulf.model
+proj: true
+punct: false
+seed: 1
+test: ./data/Gulf/gumar_test.conllu
+threads: 16
+train: ./data/patb-gumar_train.conllx
+tree: true
+update_steps: 4
+wandb: false
+warmup: 0.1
+weight_decay: 0
+workers: 0
+
+[2023-11-25 13:22:40 INFO] Building the fields
+[2023-11-25 13:22:43 WARNING] Sentence 409 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 489 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 581 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 678 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 680 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 742 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 784 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1084 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1123 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1149 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1192 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1288 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1360 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1370 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1412 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1445 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1489 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1497 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1507 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1579 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1629 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1686 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1753 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1761 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1770 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1818 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 1935 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 2026 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 2094 is not projective. Discarding it!
+[2023-11-25 13:22:43 WARNING] Sentence 2153 is not projective. Discarding it!
+[2023-11-25 13:22:44 WARNING] Sentence 2454 is not projective. Discarding it!
+[2023-11-25 13:22:44 WARNING] Sentence 2821 is not projective. Discarding it!
+[2023-11-25 13:22:44 WARNING] Sentence 2897 is not projective. Discarding it!
+[2023-11-25 13:22:44 WARNING] Sentence 3089 is not projective. Discarding it!
+[2023-11-25 13:22:44 WARNING] Sentence 3089 is not projective. Discarding it!
+[2023-11-25 13:22:44 WARNING] Sentence 3158 is not projective. Discarding it!
+[2023-11-25 13:22:44 WARNING] Sentence 3231 is not projective. Discarding it!
+[2023-11-25 13:22:45 WARNING] Sentence 3862 is not projective. Discarding it!
+[2023-11-25 13:22:45 WARNING] Sentence 3862 is not projective. Discarding it!
+[2023-11-25 13:22:45 WARNING] Sentence 3954 is not projective. Discarding it!
+[2023-11-25 13:22:45 WARNING] Sentence 4262 is not projective. Discarding it!
+[2023-11-25 13:22:45 WARNING] Sentence 4276 is not projective. Discarding it!
+[2023-11-25 13:22:45 WARNING] Sentence 4737 is not projective. Discarding it!
+[2023-11-25 13:22:45 WARNING] Sentence 4742 is not projective. Discarding it!
+[2023-11-25 13:22:45 WARNING] Sentence 4757 is not projective. Discarding it!
+[2023-11-25 13:22:45 WARNING] Sentence 4824 is not projective. Discarding it!
+[2023-11-25 13:22:45 WARNING] Sentence 4824 is not projective. Discarding it!
+[2023-11-25 13:22:45 WARNING] Sentence 4852 is not projective. Discarding it!
+[2023-11-25 13:22:46 WARNING] Sentence 5183 is not projective. Discarding it!
+[2023-11-25 13:22:46 WARNING] Sentence 5269 is not projective. Discarding it!
+[2023-11-25 13:22:46 WARNING] Sentence 5376 is not projective. Discarding it!
+[2023-11-25 13:22:46 WARNING] Sentence 5410 is not projective. Discarding it!
+[2023-11-25 13:22:46 WARNING] Sentence 5488 is not projective. Discarding it!
+[2023-11-25 13:22:46 WARNING] Sentence 5954 is not projective. Discarding it!
+[2023-11-25 13:22:46 WARNING] Sentence 5994 is not projective. Discarding it!
+[2023-11-25 13:22:46 WARNING] Sentence 6232 is not projective. Discarding it!
+[2023-11-25 13:22:46 WARNING] Sentence 6349 is not projective. Discarding it!
+[2023-11-25 13:22:47 WARNING] Sentence 7466 is not projective. Discarding it!
+[2023-11-25 13:22:47 WARNING] Sentence 7657 is not projective. Discarding it!
+[2023-11-25 13:22:47 WARNING] Sentence 7679 is not projective. Discarding it!
+[2023-11-25 13:22:47 WARNING] Sentence 7827 is not projective. Discarding it!
+[2023-11-25 13:22:48 WARNING] Sentence 8355 is not projective. Discarding it!
+[2023-11-25 13:22:48 WARNING] Sentence 8396 is not projective. Discarding it!
+[2023-11-25 13:22:48 WARNING] Sentence 8431 is not projective. Discarding it!
+[2023-11-25 13:22:48 WARNING] Sentence 8747 is not projective. Discarding it!
+[2023-11-25 13:22:48 WARNING] Sentence 8932 is not projective. Discarding it!
+[2023-11-25 13:22:49 WARNING] Sentence 9717 is not projective. Discarding it!
+[2023-11-25 13:22:49 WARNING] Sentence 9763 is not projective. Discarding it!
+[2023-11-25 13:22:49 WARNING] Sentence 10154 is not projective. Discarding it!
+[2023-11-25 13:22:50 WARNING] Sentence 11111 is not projective. Discarding it!
+[2023-11-25 13:22:50 WARNING] Sentence 11184 is not projective. Discarding it!
+[2023-11-25 13:22:50 WARNING] Sentence 11243 is not projective. Discarding it!
+[2023-11-25 13:22:50 WARNING] Sentence 11255 is not projective. Discarding it!
+[2023-11-25 13:22:50 WARNING] Sentence 11675 is not projective. Discarding it!
+[2023-11-25 13:22:50 WARNING] Sentence 11678 is not projective. Discarding it!
+[2023-11-25 13:22:50 WARNING] Sentence 11776 is not projective. Discarding it!
+[2023-11-25 13:22:50 WARNING] Sentence 11867 is not projective. Discarding it!
+[2023-11-25 13:22:50 WARNING] Sentence 11922 is not projective. Discarding it!
+[2023-11-25 13:22:50 WARNING] Sentence 11986 is not projective. Discarding it!
+[2023-11-25 13:22:50 WARNING] Sentence 12041 is not projective. Discarding it!
+[2023-11-25 13:22:51 WARNING] Sentence 12403 is not projective. Discarding it!
+[2023-11-25 13:22:51 WARNING] Sentence 12435 is not projective. Discarding it!
+[2023-11-25 13:22:51 WARNING] Sentence 12453 is not projective. Discarding it!
+[2023-11-25 13:22:51 WARNING] Sentence 12920 is not projective. Discarding it!
+[2023-11-25 13:22:51 WARNING] Sentence 12945 is not projective. Discarding it!
+[2023-11-25 13:22:51 WARNING] Sentence 13238 is not projective. Discarding it!
+[2023-11-25 13:22:51 WARNING] Sentence 13351 is not projective. Discarding it!
+[2023-11-25 13:22:51 WARNING] Sentence 13352 is not projective. Discarding it!
+[2023-11-25 13:22:51 WARNING] Sentence 13386 is not projective. Discarding it!
+[2023-11-25 13:22:51 WARNING] Sentence 13514 is not projective. Discarding it!
+[2023-11-25 13:22:51 WARNING] Sentence 13567 is not projective. Discarding it!
+[2023-11-25 13:22:51 WARNING] Sentence 13708 is not projective. Discarding it!
+[2023-11-25 13:22:52 WARNING] Sentence 13855 is not projective. Discarding it!
+[2023-11-25 13:22:52 WARNING] Sentence 13952 is not projective. Discarding it!
+[2023-11-25 13:22:52 WARNING] Sentence 14119 is not projective. Discarding it!
+[2023-11-25 13:22:52 WARNING] Sentence 14170 is not projective. Discarding it!
+[2023-11-25 13:22:52 WARNING] Sentence 14265 is not projective. Discarding it!
+[2023-11-25 13:22:52 WARNING] Sentence 14309 is not projective. Discarding it!
+[2023-11-25 13:22:52 WARNING] Sentence 14869 is not projective. Discarding it!
+[2023-11-25 13:22:52 WARNING] Sentence 14938 is not projective. Discarding it!
+[2023-11-25 13:22:53 WARNING] Sentence 15869 is not projective. Discarding it!
+[2023-11-25 13:22:53 WARNING] Sentence 15917 is not projective. Discarding it!
+[2023-11-25 13:22:53 WARNING] Sentence 16072 is not projective. Discarding it!
+[2023-11-25 13:22:54 WARNING] Sentence 16105 is not projective. Discarding it!
+[2023-11-25 13:22:54 WARNING] Sentence 16290 is not projective. Discarding it!
+[2023-11-25 13:22:54 WARNING] Sentence 16355 is not projective. Discarding it!
+[2023-11-25 13:22:54 WARNING] Sentence 16367 is not projective. Discarding it!
+[2023-11-25 13:22:55 WARNING] Sentence 16609 is not projective. Discarding it!
+[2023-11-25 13:22:55 WARNING] Sentence 16611 is not projective. Discarding it!
+[2023-11-25 13:22:55 WARNING] Sentence 16646 is not projective. Discarding it!
+[2023-11-25 13:22:55 WARNING] Sentence 16649 is not projective. Discarding it!
+[2023-11-25 13:22:55 WARNING] Sentence 16649 is not projective. Discarding it!
+[2023-11-25 13:22:55 WARNING] Sentence 16753 is not projective. Discarding it!
+[2023-11-25 13:22:55 WARNING] Sentence 16757 is not projective. Discarding it!
+[2023-11-25 13:22:55 WARNING] Sentence 16767 is not projective. Discarding it!
+[2023-11-25 13:22:56 WARNING] Sentence 17064 is not projective. Discarding it!
+[2023-11-25 13:22:56 WARNING] Sentence 17320 is not projective. Discarding it!
+[2023-11-25 13:22:57 WARNING] Sentence 17593 is not projective. Discarding it!
+[2023-11-25 13:22:57 WARNING] Sentence 17713 is not projective. Discarding it!
+[2023-11-25 13:22:57 WARNING] Sentence 17825 is not projective. Discarding it!
+[2023-11-25 13:22:57 WARNING] Sentence 17849 is not projective. Discarding it!
+[2023-11-25 13:22:57 INFO] CoNLL(
+ (words): SubwordField(vocab_size=30000, pad=[PAD], unk=[UNK], bos=[CLS])
+ (texts): RawField()
+ (arcs): Field(bos=<bos>, use_vocab=False)
+ (rels): Field(vocab_size=9, bos=<bos>)
+)
+[2023-11-25 13:22:57 INFO] Building the model
+[2023-11-25 13:23:17 INFO] BiaffineDependencyModel(
+  (encoder): TransformerEmbedding(ashabrawy/gumar_aligned_msa, n_layers=4, n_out=768, stride=256, pooling=mean, pad_index=0, finetune=True)
+  (encoder_dropout): Dropout(p=0.1, inplace=False)
+  (arc_mlp_d): MLP(n_in=768, n_out=500, dropout=0.33)
+  (arc_mlp_h): MLP(n_in=768, n_out=500, dropout=0.33)
+  (rel_mlp_d): MLP(n_in=768, n_out=100, dropout=0.33)
+  (rel_mlp_h): MLP(n_in=768, n_out=100, dropout=0.33)
+  (arc_attn): Biaffine(n_in=500, bias_x=True)
+  (rel_attn): Biaffine(n_in=100, n_out=9, bias_x=True, bias_y=True)
+  (criterion): CrossEntropyLoss()
+)
+
+[2023-11-25 13:23:18 INFO] Loading the data
+[2023-11-25 13:23:18 WARNING] Sentence 409 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 489 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 581 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 678 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 680 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 742 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 784 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1084 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1123 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1149 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1192 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1288 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1360 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1370 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1412 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1445 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1489 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1497 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1507 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1579 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1629 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1686 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1753 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1761 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1770 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1818 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 1935 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 2026 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 2094 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 2153 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 2454 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 2821 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 2897 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 3089 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 3089 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 3158 is not projective. Discarding it!
+[2023-11-25 13:23:19 WARNING] Sentence 3231 is not projective. Discarding it!
+[2023-11-25 13:23:20 WARNING] Sentence 3862 is not projective. Discarding it!
+[2023-11-25 13:23:20 WARNING] Sentence 3862 is not projective. Discarding it!
+[2023-11-25 13:23:20 WARNING] Sentence 3954 is not projective. Discarding it!
+[2023-11-25 13:23:20 WARNING] Sentence 4262 is not projective. Discarding it!
+[2023-11-25 13:23:20 WARNING] Sentence 4276 is not projective. Discarding it!
+[2023-11-25 13:23:20 WARNING] Sentence 4737 is not projective. Discarding it!
+[2023-11-25 13:23:20 WARNING] Sentence 4742 is not projective. Discarding it!
+[2023-11-25 13:23:20 WARNING] Sentence 4757 is not projective. Discarding it!
+[2023-11-25 13:23:21 WARNING] Sentence 4824 is not projective. Discarding it!
+[2023-11-25 13:23:21 WARNING] Sentence 4824 is not projective. Discarding it!
+[2023-11-25 13:23:21 WARNING] Sentence 4852 is not projective. Discarding it!
+[2023-11-25 13:23:21 WARNING] Sentence 5183 is not projective. Discarding it!
+[2023-11-25 13:23:21 WARNING] Sentence 5269 is not projective. Discarding it!
+[2023-11-25 13:23:21 WARNING] Sentence 5376 is not projective. Discarding it!
+[2023-11-25 13:23:21 WARNING] Sentence 5410 is not projective. Discarding it!
+[2023-11-25 13:23:21 WARNING] Sentence 5488 is not projective. Discarding it!
+[2023-11-25 13:23:21 WARNING] Sentence 5954 is not projective. Discarding it!
+[2023-11-25 13:23:21 WARNING] Sentence 5994 is not projective. Discarding it!
+[2023-11-25 13:23:22 WARNING] Sentence 6232 is not projective. Discarding it!
+[2023-11-25 13:23:22 WARNING] Sentence 6349 is not projective. Discarding it!
+[2023-11-25 13:23:22 WARNING] Sentence 7466 is not projective. Discarding it!
+[2023-11-25 13:23:22 WARNING] Sentence 7657 is not projective. Discarding it!
+[2023-11-25 13:23:23 WARNING] Sentence 7679 is not projective. Discarding it!
+[2023-11-25 13:23:23 WARNING] Sentence 7827 is not projective. Discarding it!
+[2023-11-25 13:23:23 WARNING] Sentence 8355 is not projective. Discarding it!
+[2023-11-25 13:23:23 WARNING] Sentence 8396 is not projective. Discarding it!
+[2023-11-25 13:23:23 WARNING] Sentence 8431 is not projective. Discarding it!
+[2023-11-25 13:23:23 WARNING] Sentence 8747 is not projective. Discarding it!
+[2023-11-25 13:23:23 WARNING] Sentence 8932 is not projective. Discarding it!
+[2023-11-25 13:23:24 WARNING] Sentence 9717 is not projective. Discarding it!
+[2023-11-25 13:23:24 WARNING] Sentence 9763 is not projective. Discarding it!
+[2023-11-25 13:23:24 WARNING] Sentence 10154 is not projective. Discarding it!
+[2023-11-25 13:23:25 WARNING] Sentence 11111 is not projective. Discarding it!
+[2023-11-25 13:23:25 WARNING] Sentence 11184 is not projective. Discarding it!
+[2023-11-25 13:23:25 WARNING] Sentence 11243 is not projective. Discarding it!
+[2023-11-25 13:23:25 WARNING] Sentence 11255 is not projective. Discarding it!
+[2023-11-25 13:23:25 WARNING] Sentence 11675 is not projective. Discarding it!
+[2023-11-25 13:23:25 WARNING] Sentence 11678 is not projective. Discarding it!
+[2023-11-25 13:23:25 WARNING] Sentence 11776 is not projective. Discarding it!
+[2023-11-25 13:23:25 WARNING] Sentence 11867 is not projective. Discarding it!
+[2023-11-25 13:23:25 WARNING] Sentence 11922 is not projective. Discarding it!
+[2023-11-25 13:23:25 WARNING] Sentence 11986 is not projective. Discarding it!
+[2023-11-25 13:23:25 WARNING] Sentence 12041 is not projective. Discarding it!
+[2023-11-25 13:23:26 WARNING] Sentence 12403 is not projective. Discarding it!
+[2023-11-25 13:23:26 WARNING] Sentence 12435 is not projective. Discarding it!
+[2023-11-25 13:23:26 WARNING] Sentence 12453 is not projective. Discarding it!
+[2023-11-25 13:23:26 WARNING] Sentence 12920 is not projective. Discarding it!
+[2023-11-25 13:23:26 WARNING] Sentence 12945 is not projective. Discarding it!
+[2023-11-25 13:23:26 WARNING] Sentence 13238 is not projective. Discarding it!
+[2023-11-25 13:23:26 WARNING] Sentence 13351 is not projective. Discarding it!
+[2023-11-25 13:23:26 WARNING] Sentence 13352 is not projective. Discarding it!
+[2023-11-25 13:23:26 WARNING] Sentence 13386 is not projective. Discarding it!
+[2023-11-25 13:23:26 WARNING] Sentence 13514 is not projective. Discarding it!
+[2023-11-25 13:23:26 WARNING] Sentence 13567 is not projective. Discarding it!
+[2023-11-25 13:23:27 WARNING] Sentence 13708 is not projective. Discarding it!
+[2023-11-25 13:23:27 WARNING] Sentence 13855 is not projective. Discarding it!
+[2023-11-25 13:23:27 WARNING] Sentence 13952 is not projective. Discarding it!
+[2023-11-25 13:23:27 WARNING] Sentence 14119 is not projective. Discarding it!
+[2023-11-25 13:23:27 WARNING] Sentence 14170 is not projective. Discarding it!
+[2023-11-25 13:23:27 WARNING] Sentence 14265 is not projective. Discarding it!
+[2023-11-25 13:23:27 WARNING] Sentence 14309 is not projective. Discarding it!
+[2023-11-25 13:23:27 WARNING] Sentence 14869 is not projective. Discarding it!
+[2023-11-25 13:23:27 WARNING] Sentence 14938 is not projective. Discarding it!
+[2023-11-25 13:23:28 WARNING] Sentence 15869 is not projective. Discarding it!
+[2023-11-25 13:23:28 WARNING] Sentence 15917 is not projective. Discarding it!
+[2023-11-25 13:23:29 WARNING] Sentence 16072 is not projective. Discarding it!
+[2023-11-25 13:23:29 WARNING] Sentence 16105 is not projective. Discarding it!
+[2023-11-25 13:23:29 WARNING] Sentence 16290 is not projective. Discarding it!
+[2023-11-25 13:23:29 WARNING] Sentence 16355 is not projective. Discarding it!
+[2023-11-25 13:23:29 WARNING] Sentence 16367 is not projective. Discarding it!
+[2023-11-25 13:23:30 WARNING] Sentence 16609 is not projective. Discarding it!
+[2023-11-25 13:23:30 WARNING] Sentence 16611 is not projective. Discarding it!
+[2023-11-25 13:23:30 WARNING] Sentence 16646 is not projective. Discarding it!
+[2023-11-25 13:23:30 WARNING] Sentence 16649 is not projective. Discarding it!
+[2023-11-25 13:23:30 WARNING] Sentence 16649 is not projective. Discarding it!
+[2023-11-25 13:23:30 WARNING] Sentence 16753 is not projective. Discarding it!
+[2023-11-25 13:23:30 WARNING] Sentence 16757 is not projective. Discarding it!
+[2023-11-25 13:23:30 WARNING] Sentence 16767 is not projective. Discarding it!
+[2023-11-25 13:23:31 WARNING] Sentence 17064 is not projective. Discarding it!
+[2023-11-25 13:23:31 WARNING] Sentence 17320 is not projective. Discarding it!
+[2023-11-25 13:23:32 WARNING] Sentence 17593 is not projective. Discarding it!
+[2023-11-25 13:23:32 WARNING] Sentence 17713 is not projective. Discarding it!
+[2023-11-25 13:23:32 WARNING] Sentence 17825 is not projective. Discarding it!
+[2023-11-25 13:23:32 WARNING] Sentence 17849 is not projective. Discarding it!
+[2023-11-25 13:23:32 INFO] Caching the data to /tmpdata/tmpejqrelqm/data.pt
+[2023-11-25 13:23:32 WARNING] Sentence 409 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 489 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 581 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 678 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 680 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 742 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 784 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1084 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1123 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1149 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1192 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1288 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1360 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1370 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1412 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1445 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1489 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1497 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1507 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1579 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1629 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1686 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1753 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1761 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1770 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1818 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 1935 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 2026 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 2094 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 2153 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 2454 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 2821 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 2897 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 3089 is not projective. Discarding it!
+[2023-11-25 13:23:33 WARNING] Sentence 3089 is not projective. Discarding it!
+[2023-11-25 13:23:34 WARNING] Sentence 3158 is not projective. Discarding it!
+[2023-11-25 13:23:34 WARNING] Sentence 3231 is not projective. Discarding it!
+[2023-11-25 13:23:34 WARNING] Sentence 3862 is not projective. Discarding it!
+[2023-11-25 13:23:34 WARNING] Sentence 3862 is not projective. Discarding it!
+[2023-11-25 13:23:34 WARNING] Sentence 3954 is not projective. Discarding it!
+[2023-11-25 13:23:34 WARNING] Sentence 4262 is not projective. Discarding it!
+[2023-11-25 13:23:34 WARNING] Sentence 4276 is not projective. Discarding it!
+[2023-11-25 13:23:35 WARNING] Sentence 4737 is not projective. Discarding it!
+[2023-11-25 13:23:35 WARNING] Sentence 4742 is not projective. Discarding it!
+[2023-11-25 13:23:35 WARNING] Sentence 4757 is not projective. Discarding it!
+[2023-11-25 13:23:35 WARNING] Sentence 4824 is not projective. Discarding it!
+[2023-11-25 13:23:35 WARNING] Sentence 4824 is not projective. Discarding it!
+[2023-11-25 13:23:35 WARNING] Sentence 4852 is not projective. Discarding it!
+[2023-11-25 13:23:35 WARNING] Sentence 5183 is not projective. Discarding it!
+[2023-11-25 13:23:35 WARNING] Sentence 5269 is not projective. Discarding it!
+[2023-11-25 13:23:35 WARNING] Sentence 5376 is not projective. Discarding it!
+[2023-11-25 13:23:35 WARNING] Sentence 5410 is not projective. Discarding it!
+[2023-11-25 13:23:35 WARNING] Sentence 5488 is not projective. Discarding it!
+[2023-11-25 13:23:36 WARNING] Sentence 5954 is not projective. Discarding it!
+[2023-11-25 13:23:36 WARNING] Sentence 5994 is not projective. Discarding it!
+[2023-11-25 13:23:36 WARNING] Sentence 6232 is not projective. Discarding it!
+[2023-11-25 13:23:36 WARNING] Sentence 6349 is not projective. Discarding it!
+[2023-11-25 13:23:37 WARNING] Sentence 7466 is not projective. Discarding it!
+[2023-11-25 13:23:37 WARNING] Sentence 7657 is not projective. Discarding it!
+[2023-11-25 13:23:37 WARNING] Sentence 7679 is not projective. Discarding it!
+[2023-11-25 13:23:37 WARNING] Sentence 7827 is not projective. Discarding it!
+[2023-11-25 13:23:38 WARNING] Sentence 8355 is not projective. Discarding it!
+[2023-11-25 13:23:38 WARNING] Sentence 8396 is not projective. Discarding it!
+[2023-11-25 13:23:38 WARNING] Sentence 8431 is not projective. Discarding it!
+[2023-11-25 13:23:38 WARNING] Sentence 8747 is not projective. Discarding it!
+[2023-11-25 13:23:38 WARNING] Sentence 8932 is not projective. Discarding it!
+[2023-11-25 13:23:39 WARNING] Sentence 9717 is not projective. Discarding it!
+[2023-11-25 13:23:39 WARNING] Sentence 9763 is not projective. Discarding it!
+[2023-11-25 13:23:39 WARNING] Sentence 10154 is not projective. Discarding it!
+[2023-11-25 13:23:40 WARNING] Sentence 11111 is not projective. Discarding it!
+[2023-11-25 13:23:40 WARNING] Sentence 11184 is not projective. Discarding it!
+[2023-11-25 13:23:40 WARNING] Sentence 11243 is not projective. Discarding it!
+[2023-11-25 13:23:40 WARNING] Sentence 11255 is not projective. Discarding it!
+[2023-11-25 13:23:40 WARNING] Sentence 11675 is not projective. Discarding it!
+[2023-11-25 13:23:40 WARNING] Sentence 11678 is not projective. Discarding it!
+[2023-11-25 13:23:40 WARNING] Sentence 11776 is not projective. Discarding it!
+[2023-11-25 13:23:40 WARNING] Sentence 11867 is not projective. Discarding it!
+[2023-11-25 13:23:40 WARNING] Sentence 11922 is not projective. Discarding it!
+[2023-11-25 13:23:40 WARNING] Sentence 11986 is not projective. Discarding it!
+[2023-11-25 13:23:40 WARNING] Sentence 12041 is not projective. Discarding it!
+[2023-11-25 13:23:41 WARNING] Sentence 12403 is not projective. Discarding it!
+[2023-11-25 13:23:41 WARNING] Sentence 12435 is not projective. Discarding it!
+[2023-11-25 13:23:41 WARNING] Sentence 12453 is not projective. Discarding it!
+[2023-11-25 13:23:41 WARNING] Sentence 12920 is not projective. Discarding it!
+[2023-11-25 13:23:41 WARNING] Sentence 12945 is not projective. Discarding it!
+[2023-11-25 13:23:41 WARNING] Sentence 13238 is not projective. Discarding it!
+[2023-11-25 13:23:41 WARNING] Sentence 13351 is not projective. Discarding it!
+[2023-11-25 13:23:41 WARNING] Sentence 13352 is not projective. Discarding it!
+[2023-11-25 13:23:41 WARNING] Sentence 13386 is not projective. Discarding it!
+[2023-11-25 13:23:42 WARNING] Sentence 13514 is not projective. Discarding it!
+[2023-11-25 13:23:42 WARNING] Sentence 13567 is not projective. Discarding it!
+[2023-11-25 13:23:42 WARNING] Sentence 13708 is not projective. Discarding it!
+[2023-11-25 13:23:42 WARNING] Sentence 13855 is not projective. Discarding it!
+[2023-11-25 13:23:42 WARNING] Sentence 13952 is not projective. Discarding it!
+[2023-11-25 13:23:42 WARNING] Sentence 14119 is not projective. Discarding it!
+[2023-11-25 13:23:42 WARNING] Sentence 14170 is not projective. Discarding it!
+[2023-11-25 13:23:42 WARNING] Sentence 14265 is not projective. Discarding it!
+[2023-11-25 13:23:42 WARNING] Sentence 14309 is not projective. Discarding it!
+[2023-11-25 13:23:42 WARNING] Sentence 14869 is not projective. Discarding it!
+[2023-11-25 13:23:43 WARNING] Sentence 14938 is not projective. Discarding it!
+[2023-11-25 13:23:43 WARNING] Sentence 15869 is not projective. Discarding it!
+[2023-11-25 13:23:44 WARNING] Sentence 15917 is not projective. Discarding it!
+[2023-11-25 13:23:44 WARNING] Sentence 16072 is not projective. Discarding it!
+[2023-11-25 13:23:44 WARNING] Sentence 16105 is not projective. Discarding it!
+[2023-11-25 13:23:45 WARNING] Sentence 16290 is not projective. Discarding it!
+[2023-11-25 13:23:45 WARNING] Sentence 16355 is not projective. Discarding it!
+[2023-11-25 13:23:45 WARNING] Sentence 16367 is not projective. Discarding it!
+[2023-11-25 13:23:45 WARNING] Sentence 16609 is not projective. Discarding it!
+[2023-11-25 13:23:45 WARNING] Sentence 16611 is not projective. Discarding it!
+[2023-11-25 13:23:45 WARNING] Sentence 16646 is not projective. Discarding it!
+[2023-11-25 13:23:45 WARNING] Sentence 16649 is not projective. Discarding it!
+[2023-11-25 13:23:45 WARNING] Sentence 16649 is not projective. Discarding it!
+[2023-11-25 13:23:45 WARNING] Sentence 16753 is not projective. Discarding it!
+[2023-11-25 13:23:46 WARNING] Sentence 16757 is not projective. Discarding it!
+[2023-11-25 13:23:46 WARNING] Sentence 16767 is not projective. Discarding it!
+[2023-11-25 13:23:46 WARNING] Sentence 17064 is not projective. Discarding it!
+[2023-11-25 13:23:47 WARNING] Sentence 17320 is not projective. Discarding it!
+[2023-11-25 13:23:47 WARNING] Sentence 17593 is not projective. Discarding it!
+[2023-11-25 13:23:48 WARNING] Sentence 17713 is not projective. Discarding it!
+[2023-11-25 13:23:48 WARNING] Sentence 17825 is not projective. Discarding it!
+[2023-11-25 13:23:48 WARNING] Sentence 17849 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 3 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 42 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 49 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 122 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 199 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 199 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 203 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 212 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 216 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 255 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 272 is not projective. Discarding it!
+[2023-11-25 13:24:42 INFO] Caching the data to /tmpdata/tmpr2io5t6s/data.pt
+[2023-11-25 13:24:42 WARNING] Sentence 3 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 42 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 49 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 122 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 199 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 199 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 203 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 212 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 216 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 255 is not projective. Discarding it!
+[2023-11-25 13:24:42 WARNING] Sentence 272 is not projective. Discarding it!
+[2023-11-25 13:24:44 INFO] train: Dataset(n_sentences=17858, n_batches=497, n_buckets=32)
+[2023-11-25 13:24:44 WARNING] Sentence 68 is not projective. Discarding it!
+[2023-11-25 13:24:44 WARNING] Sentence 96 is not projective. Discarding it!
+[2023-11-25 13:24:44 WARNING] Sentence 177 is not projective. Discarding it!
+[2023-11-25 13:24:44 WARNING] Sentence 305 is not projective. Discarding it!
+[2023-11-25 13:24:44 WARNING] Sentence 330 is not projective. Discarding it!
+[2023-11-25 13:24:44 INFO] Caching the data to /tmpdata/tmpf7kdjtjw/data.pt
+[2023-11-25 13:24:44 WARNING] Sentence 68 is not projective. Discarding it!
+[2023-11-25 13:24:44 WARNING] Sentence 96 is not projective. Discarding it!
+[2023-11-25 13:24:44 WARNING] Sentence 177 is not projective. Discarding it!
+[2023-11-25 13:24:44 WARNING] Sentence 305 is not projective. Discarding it!
+[2023-11-25 13:24:44 WARNING] Sentence 330 is not projective. Discarding it!
+[2023-11-25 13:24:47 INFO] dev:   Dataset(n_sentences=302, n_batches=32, n_buckets=32)
+[2023-11-25 13:24:47 INFO] test:  Dataset(n_sentences=373, n_batches=27, n_buckets=27)
+
+[2023-11-25 13:24:47 INFO] Epoch 1 / 10:
+[2023-11-25 13:25:10 INFO] lr: 4.9955e-05 - loss: 0.2663
+[2023-11-25 13:25:11 INFO] dev:  loss: 0.7833 - UCM: 38.74% LCM: 27.15% UAS: 83.04% LAS: 77.72%
+[2023-11-25 13:25:12 INFO] test: loss: 0.8322 - UCM: 48.53% LCM: 34.58% UAS: 85.97% LAS: 80.56%
+[2023-11-25 13:25:14 INFO] 0:00:25.261857s elapsed (saved)
+
+[2023-11-25 13:25:14 INFO] Epoch 2 / 10:
+[2023-11-25 13:25:37 INFO] lr: 4.4365e-05 - loss: 0.0840
+[2023-11-25 13:25:38 INFO] dev:  loss: 0.6013 - UCM: 45.70% LCM: 33.77% UAS: 86.79% LAS: 82.65%
+[2023-11-25 13:25:38 INFO] test: loss: 0.6250 - UCM: 56.57% LCM: 42.90% UAS: 88.73% LAS: 84.27%
+[2023-11-25 13:25:41 INFO] 0:00:24.037653s elapsed (saved)
+
+[2023-11-25 13:25:41 INFO] Epoch 3 / 10:
+[2023-11-25 13:26:03 INFO] lr: 3.8775e-05 - loss: 0.0768
+[2023-11-25 13:26:04 INFO] dev:  loss: 0.5573 - UCM: 48.68% LCM: 36.75% UAS: 87.87% LAS: 84.38%
+[2023-11-25 13:26:05 INFO] test: loss: 0.5729 - UCM: 58.18% LCM: 45.31% UAS: 89.48% LAS: 85.87%
+[2023-11-25 13:26:07 INFO] 0:00:24.055774s elapsed (saved)
+
+[2023-11-25 13:26:07 INFO] Epoch 4 / 10:
+[2023-11-25 13:26:30 INFO] lr: 3.3184e-05 - loss: 0.0606
+[2023-11-25 13:26:31 INFO] dev:  loss: 0.5159 - UCM: 50.66% LCM: 40.73% UAS: 88.91% LAS: 85.68%
+[2023-11-25 13:26:31 INFO] test: loss: 0.5360 - UCM: 58.71% LCM: 46.11% UAS: 90.04% LAS: 86.58%
+[2023-11-25 13:26:34 INFO] 0:00:23.886477s elapsed (saved)
+
+[2023-11-25 13:26:34 INFO] Epoch 5 / 10:
+[2023-11-25 13:26:56 INFO] lr: 2.7594e-05 - loss: 0.0485
+[2023-11-25 13:26:57 INFO] dev:  loss: 0.5381 - UCM: 50.33% LCM: 39.74% UAS: 88.78% LAS: 85.52%
+[2023-11-25 13:26:58 INFO] test: loss: 0.5327 - UCM: 61.13% LCM: 47.18% UAS: 90.33% LAS: 86.88%
+[2023-11-25 13:26:58 INFO] 0:00:24.087171s elapsed
+
+[2023-11-25 13:26:58 INFO] Epoch 6 / 10:
+[2023-11-25 13:27:20 INFO] lr: 2.2004e-05 - loss: 0.0597
+[2023-11-25 13:27:21 INFO] dev:  loss: 0.5641 - UCM: 51.66% LCM: 40.73% UAS: 89.04% LAS: 85.91%
+[2023-11-25 13:27:22 INFO] test: loss: 0.5570 - UCM: 60.32% LCM: 47.18% UAS: 90.10% LAS: 86.81%
+[2023-11-25 13:27:24 INFO] 0:00:24.057598s elapsed (saved)
+
+[2023-11-25 13:27:24 INFO] Epoch 7 / 10:
+[2023-11-25 13:27:47 INFO] lr: 1.6413e-05 - loss: 0.0520
+[2023-11-25 13:27:48 INFO] dev:  loss: 0.5507 - UCM: 52.98% LCM: 42.05% UAS: 89.50% LAS: 86.43%
+[2023-11-25 13:27:48 INFO] test: loss: 0.5525 - UCM: 60.86% LCM: 47.45% UAS: 90.36% LAS: 87.14%
+[2023-11-25 13:27:51 INFO] 0:00:24.032513s elapsed (saved)
+
+[2023-11-25 13:27:51 INFO] Epoch 8 / 10:
+[2023-11-25 13:28:13 INFO] lr: 1.0823e-05 - loss: 0.0553
+[2023-11-25 13:28:14 INFO] dev:  loss: 0.5704 - UCM: 52.65% LCM: 42.05% UAS: 89.53% LAS: 86.53%
+[2023-11-25 13:28:15 INFO] test: loss: 0.5690 - UCM: 61.66% LCM: 48.26% UAS: 90.62% LAS: 87.17%
+[2023-11-25 13:28:18 INFO] 0:00:23.992418s elapsed (saved)
+
+[2023-11-25 13:28:18 INFO] Epoch 9 / 10:
+[2023-11-25 13:28:40 INFO] lr: 5.2326e-06 - loss: 0.0365
+[2023-11-25 13:28:41 INFO] dev:  loss: 0.5791 - UCM: 53.97% LCM: 43.38% UAS: 89.60% LAS: 86.69%
+[2023-11-25 13:28:42 INFO] test: loss: 0.5778 - UCM: 60.59% LCM: 48.79% UAS: 90.43% LAS: 87.24%
+[2023-11-25 13:28:45 INFO] 0:00:23.952008s elapsed (saved)
+
+[2023-11-25 13:28:45 INFO] Epoch 10 / 10:
+[2023-11-25 13:29:07 INFO] lr: -3.5778e-07 - loss: 0.0574
+[2023-11-25 13:29:08 INFO] dev:  loss: 0.5886 - UCM: 54.30% LCM: 43.71% UAS: 89.76% LAS: 86.89%
+[2023-11-25 13:29:09 INFO] test: loss: 0.5855 - UCM: 60.86% LCM: 48.53% UAS: 90.36% LAS: 86.97%
+[2023-11-25 13:29:11 INFO] 0:00:24.004120s elapsed (saved)
+
+[2023-11-25 13:29:14 INFO] Epoch 10 saved
+[2023-11-25 13:29:14 INFO] dev:  loss: 0.5886 - UCM: 54.30% LCM: 43.71% UAS: 89.76% LAS: 86.89%
+[2023-11-25 13:29:15 INFO] test: loss: 0.5855 - UCM: 60.86% LCM: 48.53% UAS: 90.36% LAS: 86.97%
+[2023-11-25 13:29:15 INFO] 0:04:01.367589s elapsed, 0:00:24.136759s/epoch

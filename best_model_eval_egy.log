@@ -1,0 +1,53 @@
+[32m[2023-11-25 13:51:31 INFO][0m 
+amp: false
+bert_pooling: mean
+binarize: false
+buckets: 8
+cache: false
+clip: 5.0
+data: data/Egyptian/arz_test.conllx
+device: '0'
+dist: ddp
+encoder_dropout: 0.1
+epochs: 10
+eps: 1.0e-08
+fix_len: 20
+lr: 5.0e-05
+lr_rate: 10
+min_freq: 2
+mix_dropout: 0.0
+mlp_dropout: 0.33
+mode: evaluate
+mu: 0.9
+n_arc_mlp: 500
+n_bert_layers: 4
+n_rel_mlp: 100
+nu: 0.999
+partial: false
+path: models/aligned_egy.model
+proj: true
+punct: false
+seed: 1
+threads: 16
+tree: true
+update_steps: 4
+wandb: false
+warmup: 0.1
+weight_decay: 0
+workers: 0
+
+[32m[2023-11-25 13:51:37 INFO][0m Loading the data
+[31m[2023-11-25 13:51:37 WARNING][0m Sentence 2188 is not projective. Discarding it!
+[31m[2023-11-25 13:51:37 WARNING][0m Sentence 2884 is not projective. Discarding it!
+[31m[2023-11-25 13:51:37 WARNING][0m Sentence 6837 is not projective. Discarding it!
+[31m[2023-11-25 13:51:37 WARNING][0m Sentence 7486 is not projective. Discarding it!
+[32m[2023-11-25 13:51:37 INFO][0m Caching the data to /tmpdata/tmp57uhofdr/data.pt
+[31m[2023-11-25 13:51:38 WARNING][0m Sentence 2188 is not projective. Discarding it!
+[31m[2023-11-25 13:51:38 WARNING][0m Sentence 2884 is not projective. Discarding it!
+[31m[2023-11-25 13:51:38 WARNING][0m Sentence 6837 is not projective. Discarding it!
+[31m[2023-11-25 13:51:38 WARNING][0m Sentence 7486 is not projective. Discarding it!
+[32m[2023-11-25 13:51:46 INFO][0m 
+Dataset(n_sentences=7688, n_batches=13, n_buckets=8)
+[32m[2023-11-25 13:51:46 INFO][0m Evaluating the data
+[32m[2023-11-25 13:54:28 INFO][0m loss: 0.5883 - UCM: 68.51% LCM: 63.36% UAS: 87.00% LAS: 84.41%
+[32m[2023-11-25 13:54:28 INFO][0m 0:02:41.384246s elapsed, 311.83 Tokens/s, 47.64 Sents/s

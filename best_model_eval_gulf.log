@@ -1,0 +1,55 @@
+[32m[2023-11-25 14:01:09 INFO][0m 
+amp: false
+bert_pooling: mean
+binarize: false
+buckets: 8
+cache: false
+clip: 5.0
+data: data/Gulf/gumar_test.conllu
+device: '0'
+dist: ddp
+encoder_dropout: 0.1
+epochs: 10
+eps: 1.0e-08
+fix_len: 20
+lr: 5.0e-05
+lr_rate: 10
+min_freq: 2
+mix_dropout: 0.0
+mlp_dropout: 0.33
+mode: evaluate
+mu: 0.9
+n_arc_mlp: 500
+n_bert_layers: 4
+n_rel_mlp: 100
+nu: 0.999
+partial: false
+path: models/aligned_gulf.model
+proj: true
+punct: false
+seed: 1
+threads: 16
+tree: true
+update_steps: 4
+wandb: false
+warmup: 0.1
+weight_decay: 0
+workers: 0
+
+[32m[2023-11-25 14:01:15 INFO][0m Loading the data
+[31m[2023-11-25 14:01:15 WARNING][0m Sentence 68 is not projective. Discarding it!
+[31m[2023-11-25 14:01:15 WARNING][0m Sentence 96 is not projective. Discarding it!
+[31m[2023-11-25 14:01:15 WARNING][0m Sentence 177 is not projective. Discarding it!
+[31m[2023-11-25 14:01:15 WARNING][0m Sentence 305 is not projective. Discarding it!
+[31m[2023-11-25 14:01:15 WARNING][0m Sentence 330 is not projective. Discarding it!
+[32m[2023-11-25 14:01:15 INFO][0m Caching the data to /tmpdata/tmpzmec5bl3/data.pt
+[31m[2023-11-25 14:01:15 WARNING][0m Sentence 68 is not projective. Discarding it!
+[31m[2023-11-25 14:01:15 WARNING][0m Sentence 96 is not projective. Discarding it!
+[31m[2023-11-25 14:01:15 WARNING][0m Sentence 177 is not projective. Discarding it!
+[31m[2023-11-25 14:01:15 WARNING][0m Sentence 305 is not projective. Discarding it!
+[31m[2023-11-25 14:01:15 WARNING][0m Sentence 330 is not projective. Discarding it!
+[32m[2023-11-25 14:01:17 INFO][0m 
+Dataset(n_sentences=373, n_batches=8, n_buckets=8)
+[32m[2023-11-25 14:01:17 INFO][0m Evaluating the data
+[32m[2023-11-25 14:01:27 INFO][0m loss: 0.7327 - UCM: 60.86% LCM: 48.53% UAS: 90.36% LAS: 86.97%
+[32m[2023-11-25 14:01:27 INFO][0m 0:00:10.628152s elapsed, 349.17 Tokens/s, 35.10 Sents/s
