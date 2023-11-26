@@ -57,4 +57,4 @@ Levantine:
 
 to view the output simply read the files outputted called `best_model_eval_[dialect].log`. They will contain the scores.
 
-We have only included the best performing models for each dialect. If you would like to view other models please reach out to any of the group members. Thank you.
+We have only included the best-performing models for each dialect because, otherwise, we exceed the storage for the repo. If you would like to view other models please reach out to any of the group members. Thank you.
